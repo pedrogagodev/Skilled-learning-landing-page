@@ -3,17 +3,17 @@
 
     --fontFamily: "Plus Jakarta Sans", serif;
 
-    --blue-900: hsl(233°, 54%, 16%);
-    --blue-600: hsl(234°, 25%, 52%);
-    --pink-600: hsl(341°, 92%, 62%);
-    --pink-300: hsl(341°, 100%, 83%);
-    --grey: hsl(232°, 10%, 56%);
+    --blue-900: #13183F;
+    --blue-600: #666CA3;
+    --pink-600: #F74780;
+    --pink-300: #FFA7C3;
+    --grey: #83869A;
 
-    --grad-pink1: hsl(322°, 87%, 55% );
-    --grad-pink2: hsl(13°, 100%, 64%);
+    --grad-pink1: #F02AA6;
+    --grad-pink2: #FF6F48;
 
-    --grad-purple1: hsl(237°, 100%, 64%);
-    --grad-purple2: hsl(322°, 87%, 55%);
+    --grad-purple1: #4851FF;
+    --grad-purple2: #F02AA6;
 }
 
 * {
@@ -55,6 +55,12 @@ main {
 main > div:first-child {
     margin: 6.4rem 0;
   }
+
+.logo {
+    height: 2rem;
+    width: 8rem;
+  }
+  
   
 
 footer {
@@ -65,4 +71,25 @@ footer {
     gap: 10.5rem;
     padding: 2.4rem 0;
     margin-top: 8rem;
+    background-color: var(--blue-900);
+    color: white;
+}
+
+h1, h3 {
+    color: var(--blue-900);
+}
+
+p {
+    color: var(--grey);
+}
+
+.courses > div {
+    background-color: wheat;
+    height: 27.6rem;
+    width: 33.5rem;
+}
+
+.courses {
+    display: grid;    
+    gap: 6rem;
 }

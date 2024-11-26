@@ -27,15 +27,28 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
+    background-color: #9298cc3b;
 }
+
+
 
 header {
 
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10.5rem;
+    gap: 8rem;
     padding: 1.6rem 0;
+}
+
+header > button {
+
+    background-color: var(--blue-900);
+    color: white;
+    height: 6rem;
+    width: 17rem;
+    border-radius: 2.8rem;
+
 }
 
 main {
@@ -50,11 +63,37 @@ main {
 .hero {
     height: 30rem;
     width: 33rem;
+    margin: 4.8rem 0;
 }
 
 main > div:first-child {
     margin: 6.4rem 0;
+    font-size: 1.77em;
+
   }
+
+main > div p {
+    margin: 2.4rem 0 4rem;
+    height: auto;
+    width: 32rem;
+}
+
+main > div h1 {
+    width: 32.6rem;
+    line-height: 120%;
+    font-weight: 700;
+}
+
+main > div button {
+    background: linear-gradient(to top, var(--grad-pink1), var(--grad-pink2));
+    color: white;
+    height: 6rem;
+    width: 17rem;
+    border-radius: 2.8rem;
+    border: none;
+    font-family: var(--fontFamily);
+    font-size: 1.7rem;
+}
 
 .logo {
     height: 2rem;
@@ -68,11 +107,19 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10.5rem;
+    gap: 8rem;
     padding: 2.4rem 0;
     margin-top: 8rem;
     background-color: var(--blue-900);
     color: white;
+}
+
+footer button {
+    background: linear-gradient(to top, var(--grad-purple2), var(--grad-purple1));
+    color: white;
+    height: 4.8rem;
+    width: 15rem;
+    border-radius: 28px;
 }
 
 h1, h3 {
@@ -84,12 +131,46 @@ p {
 }
 
 .courses > div {
-    background-color: wheat;
+    background-color: rgb(255, 255, 255);
     height: 27.6rem;
     width: 33.5rem;
+    position: relative;
+    padding: 6.4rem 3.2rem 4rem;
+    border-radius: 15px;
+}
+
+.courses h2 {
+    display: grid;
+    align-items: center;
+    background: linear-gradient(to top, var(--grad-pink1), var(--grad-pink2));
+    height: 12rem;
+    width: 33.5rem;
+    border-radius: 15px;
+    color: white;
+    font-size: 2.3rem;
+    padding: 3.2rem 7rem 3.2rem 3.2rem;
+}
+
+.courses > div img {
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
 }
 
 .courses {
     display: grid;    
     gap: 6rem;
+    font-size: 1.6rem;
+
 }
+
+.courses p {
+    width: 27rem;
+}
+
+.courses span {
+    color: var(--pink-600);
+    font-weight: 700;
+}
+
+
